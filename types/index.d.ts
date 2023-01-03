@@ -18,7 +18,7 @@ export type StylisPluginCallback = (
   callback: StylisPluginCallback
 ) => string | void;
 
-export declare function prefixer(
+export function prefixer(
   element: StylisElement,
   index: number,
   children: Array<StylisElement>,

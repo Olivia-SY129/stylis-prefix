@@ -1,1 +1,1 @@
-export { prefixer as default } from "./prefixer";
+export { prefixer } from "./prefixer.js";

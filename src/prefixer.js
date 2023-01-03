@@ -1,11 +1,17 @@
 import {
   charat,
+  combine,
+  copy,
+  DECLARATION,
   hash,
   indexof,
+  KEYFRAMES,
   match,
   MOZ,
   MS,
   replace,
+  RULESET,
+  serialize,
   strlen,
   WEBKIT,
 } from "stylis";
@@ -37,20 +43,20 @@ function prefix(value, length) {
     case 5365:
     case 5621:
     case 3829:
-    // mask, mask-image, mask-(mode|clip|size), mask-(repeat|origin), mask-position, mask-composite,
+    // mask, mask-image, mask-(mode|clip|size), mask-(repeat|origin), mask-position,
     case 6391:
     case 5879:
     case 5623:
     case 6135:
     case 4599:
       return WEBKIT + value + value;
+    // mask-composite
     case 4855:
       const webkitValue = value
         .replaceAll("add", "source-over")
         .replaceAll("substract", "source-out")
         .replaceAll("intersect", "source-in")
         .replaceAll("exclude", "xor");
-
       return WEBKIT + webkitValue + value;
     // appearance, user-select, transform, hyphens, text-size-adjust
     case 5349:
