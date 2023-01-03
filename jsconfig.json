@@ -6,7 +6,6 @@
     "noEmit": true,
     "strict": true,
     "target": "es5",
-    "types": [],
     "sourceMap": true,
     "noImplicitAny": true,
     "declaration": true
