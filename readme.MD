@@ -1,4 +1,4 @@
-# stylis-prefix
+# stylis-prefixer
 
 - custom prefixer for Emotion
 
