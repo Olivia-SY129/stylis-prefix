@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["es6", "dom", "ES2021"],
+    "module": "commonjs",
+    "noEmit": true,
+    "strict": true,
+    "target": "es5",
+    "types": [],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "declaration": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
